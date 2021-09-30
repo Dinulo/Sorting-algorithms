@@ -8,20 +8,37 @@ namespace bubblesort
         static void Main(string[] args)
         {
             /* To-do:
-            - validate inputs
             - limit input to 65k or up to int32   
              */
+
             //get user inputs for range
             Console.WriteLine("Bubblesort \n");
+            
+            static int parseStringToInt(string inputString) {
+                int outputInt;
+                while (!int.TryParse(inputString, out outputInt))
+                {
+                    Console.WriteLine("Entered text is not a number. Please try again.");
+                    inputString = Console.ReadLine();
+                }
+                return outputInt;
+            }
+
             Console.WriteLine("Enter array size (int): ");
-            int arraySize = Int16.Parse(Console.ReadLine());
+            var arraySizeString = Console.ReadLine();
+            int arraySize = parseStringToInt(arraySizeString);
+
             Console.WriteLine("Enter bottom of range(int): ");
-            int rangeBottom = Int16.Parse(Console.ReadLine());
+            var rangeBottomString = Console.ReadLine();
+            int rangeBottom = parseStringToInt(rangeBottomString);
+
             Console.WriteLine("Enter top of range(int): ");
-            int rangeTop = Int16.Parse(Console.ReadLine());
+            var rangeTopString = Console.ReadLine();
+            int rangeTop = parseStringToInt(rangeTopString);
 
             /*To-do:
-             - limit output to 100 chars or so if array is too long
+                - limit output to 100 chars or so if array is too long
+                - check if top > bottom and catch exception 
              */
             //fill array with random numbers and print to console
             Random rnd = new Random();
