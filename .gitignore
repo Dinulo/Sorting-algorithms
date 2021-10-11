@@ -4,3 +4,6 @@ c#/bubblesort/bin
 c#/bubblesort/obj
 c#/bubblesort/bubblesort.csproj
 c#/bubblesort/bubblesort.sln
+java/bubblesort/.idea
+java/bubblesort/bubblesort.iml
+java/bubblesort/out/production/bubblesort/Main.class
