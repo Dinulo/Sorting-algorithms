@@ -21,7 +21,7 @@ public class Main {
                 inputString = inputReader.nextLine();
             }
         }
-        return outputInt;
+        return outputInt; //to-do: check if not 0
     }
 
     public static void main(String[] args) {
