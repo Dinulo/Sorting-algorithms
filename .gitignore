@@ -7,3 +7,9 @@ c#/bubblesort/bubblesort.sln
 java/bubblesort/.idea
 java/bubblesort/bubblesort.iml
 java/bubblesort/out/production/bubblesort/Main.class
+c++/bubblesort/.vs
+c++/bubblesort/Debug
+c++/bubblesort/bubblesort.sln
+c++/bubblesort/bubblesort.vcxproj
+c++/bubblesort/bubblesort.vcxproj.filters
+c++/bubblesort/bubblesort.vcxproj.user
